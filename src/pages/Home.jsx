@@ -9,6 +9,10 @@ const HomeContainer = styled.div`
   padding: 120px 20px 20px;
   max-width: 1200px;
   margin: 0 auto;
+
+  @media (max-width: 767px) {
+    padding: 80px 15px 15px;
+  }
 `;
 
 const Title = styled.h1`
@@ -16,6 +20,11 @@ const Title = styled.h1`
   text-align: center;
   color: ${props => props.theme.colors.primary};
   font-size: 2.2rem;
+
+  @media (max-width: 767px) {
+    font-size: 1.8rem;
+    margin: 0rem 0 1rem 0;
+  }
 `;
 
 const Introduction = styled.p`
@@ -23,14 +32,28 @@ const Introduction = styled.p`
   line-height: 1.8;
   margin-bottom: 3rem;
   text-align: justify;
+
+  @media (max-width: 767px) {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
 `;
 
 const SliderContainer = styled.div`
   margin: 2rem auto;
   max-width: 1000px;
 
+  @media (max-width: 767px) {
+    margin: 1rem auto;
+  }
+
   .slick-slide {
     padding: 0 10px;
+
+    @media (max-width: 767px) {
+      padding: 0 5px;
+    }
   }
 
   .slick-prev, .slick-next {
@@ -53,6 +76,12 @@ const Image = styled.img`
   object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 767px) {
+    height: 300px;
+    object-fit: contain;
+    background-color: #f5f5f5;
+  }
 `;
 
 function Home() {
