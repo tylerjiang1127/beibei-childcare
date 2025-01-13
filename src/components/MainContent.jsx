@@ -9,8 +9,16 @@ import Contact from '../pages/Contact';
 import { getImagePath } from '../utils/imagePath';
 
 const ContentContainer = styled.div`
-  margin-left: 250px;
-  width: calc(100% - 250px);
+  @media (min-width: 768px) {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+  }
+
+  @media (max-width: 767px) {
+    margin-top: 120px;  // 为顶部导航栏留出空间
+    width: 100%;
+  }
+  
   position: relative;
   overflow: hidden;
 `;

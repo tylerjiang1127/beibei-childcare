@@ -9,27 +9,48 @@ const Nav = styled.nav`
   padding: 2rem 1rem;
   box-shadow: 2px 0 4px rgba(0,0,0,0.1);
   position: fixed;
-  height: 100vh;
-  width: 250px;
-  left: 0;
-  top: 0;
   z-index: 1000;
-  display: flex;
-  flex-direction: column;
+
+  @media (min-width: 768px) {
+    // 桌面布局
+    height: 100vh;
+    width: 250px;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (max-width: 767px) {
+    // 移动端布局
+    height: auto;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+  }
 `;
 
 const LogoContainer = styled.div`
   display: flex;
-  flex-direction: column;
   align-items: center;
   gap: 10px;
   margin-bottom: 2rem;
+
+  @media (max-width: 767px) {
+    margin-bottom: 1rem;
+  }
 `;
 
 const LogoImage = styled.img`
   width: 100px;
   height: 100px;
   object-fit: contain;
+
+  @media (max-width: 767px) {
+    width: 50px;
+    height: 50px;
+  }
 `;
 
 const Logo = styled.div`
@@ -41,8 +62,20 @@ const Logo = styled.div`
 
 const NavLinks = styled.div`
   display: flex;
-  flex-direction: column;
   gap: 1.5rem;
+
+  @media (min-width: 768px) {
+    flex-direction: column;
+  }
+
+  @media (max-width: 767px) {
+    flex-direction: row;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
 `;
 
 const NavLink = styled.a`

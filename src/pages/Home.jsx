@@ -69,12 +69,12 @@ function Home() {
   };
 
   const images = [
-    { src: getImagePath('/public/images/home-image-1.jpg') },
-    { src: getImagePath('/public/images/home-image-2.jpg') },
-    { src: getImagePath('/public/images/home-image-3.jpg') },
-    { src: getImagePath('/public/images/home-image-4.jpg') },
-    { src: getImagePath('/public/images/home-image-5.jpg') },
-    { src: getImagePath('/public/images/home-image-6.jpg') }
+    { src: getImagePath('/public/images/home-image-1.JPG') },
+    { src: getImagePath('/public/images/home-image-2.JPG') },
+    { src: getImagePath('/public/images/home-image-3.JPG') },
+    { src: getImagePath('/public/images/home-image-4.JPG') },
+    { src: getImagePath('/public/images/home-image-5.JPG') },
+    { src: getImagePath('/public/images/home-image-6.JPG') }
   ];
 
   return (
