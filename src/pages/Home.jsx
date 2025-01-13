@@ -68,12 +68,12 @@ function Home() {
   };
 
   const images = [
-    { src: "/images/home-image-1.jpg" },
-    { src: "/images/home-image-2.jpg" },
-    { src: "/images/home-image-3.jpg" },
-    { src: "/images/home-image-4.jpg" },
-    { src: "/images/home-image-5.jpg" },
-    { src: "/images/home-image-6.jpg" }
+    { src: "/beibei-childcare/public/images/home-image-1.jpg" },
+    { src: "/beibei-childcare/public/images/home-image-2.jpg" },
+    { src: "/beibei-childcare/public/images/home-image-3.jpg" },
+    { src: "/beibei-childcare/public/images/home-image-4.jpg" },
+    { src: "/beibei-childcare/public/images/home-image-5.jpg" },
+    { src: "/beibei-childcare/public/images/home-image-6.jpg" }
   ];
 
   return (

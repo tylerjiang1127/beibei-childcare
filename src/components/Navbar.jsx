@@ -91,7 +91,7 @@ function Navbar() {
   return (
     <Nav>
       <LogoContainer>
-        <LogoImage src="/images/Beibei-Logo.png" alt="Beibei Logo" />
+        <LogoImage src="/beibei-childcare/public/images/Beibei-Logo.png" alt="Beibei Logo" />
         <Logo>Beibei Child Care</Logo>
       </LogoContainer>
       <NavLinks>

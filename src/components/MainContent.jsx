@@ -189,26 +189,26 @@ function MainContent() {
   return (
     <ContentContainer>
       <WelcomeDecoration>
-        <TopStar src="/images/decorations/star.png" alt="" style={{ left: '20%' }} />
-        <TopStar src="/images/decorations/star.png" alt="" style={{ right: '20%' }} />
-        <TopButterfly src="/images/decorations/butterfly.png" alt="" style={{ left: '35%' }} />
-        <TopButterfly src="/images/decorations/butterfly.png" alt="" style={{ right: '35%' }} />
-        <TopBalloon src="/images/decorations/balloon.png" alt="" style={{ left: '50%', transform: 'translateX(-50%)' }} />
+        <TopStar src="/beibei-childcare/public/images/decorations/star.png" alt="" style={{ left: '20%' }} />
+        <TopStar src="/beibei-childcare/public/images/decorations/star.png" alt="" style={{ right: '20%' }} />
+        <TopButterfly src="/beibei-childcare/public/images/decorations/butterfly.png" alt="" style={{ left: '35%' }} />
+        <TopButterfly src="/beibei-childcare/public/images/decorations/butterfly.png" alt="" style={{ right: '35%' }} />
+        <TopBalloon src="/beibei-childcare/public/images/decorations/balloon.png" alt="" style={{ left: '50%', transform: 'translateX(-50%)' }} />
       </WelcomeDecoration>
       
-      <TopCloud1 src="/images/decorations/cloud.png" alt="" />
-      <TopCloud2 src="/images/decorations/cloud.png" alt="" />
-      <TopRainbow src="/images/decorations/rainbow.png" alt="" />
-      <TopBalloon src="/images/decorations/balloon.png" alt="" />
-      <Star1 src="/images/decorations/star.png" alt="" />
-      <Star2 src="/images/decorations/star.png" alt="" />
-      <Balloon src="/images/decorations/balloon.png" alt="" />
-      <Rainbow src="/images/decorations/rainbow.png" alt="" />
-      <Butterfly src="/images/decorations/butterfly.png" alt="" />
-      <Bird src="/images/decorations/bird.png" alt="" />
-      <TeddyBear src="/images/decorations/teddy.png" alt="" />
-      <Blocks src="/images/decorations/blocks.png" alt="" />
-      <Crayon src="/images/decorations/crayon.png" alt="" />
+      <TopCloud1 src="/beibei-childcare/public/images/decorations/cloud.png" alt="" />
+      <TopCloud2 src="/beibei-childcare/public/images/decorations/cloud.png" alt="" />
+      <TopRainbow src="/beibei-childcare/public/images/decorations/rainbow.png" alt="" />
+      <TopBalloon src="/beibei-childcare/public/images/decorations/balloon.png" alt="" />
+      <Star1 src="/beibei-childcare/public/images/decorations/star.png" alt="" />
+      <Star2 src="/beibei-childcare/public/images/decorations/star.png" alt="" />
+      <Balloon src="/beibei-childcare/public/images/decorations/balloon.png" alt="" />
+      <Rainbow src="/beibei-childcare/public/images/decorations/rainbow.png" alt="" />
+      <Butterfly src="/beibei-childcare/public/images/decorations/butterfly.png" alt="" />
+      <Bird src="/beibei-childcare/public/images/decorations/bird.png" alt="" />
+      <TeddyBear src="/beibei-childcare/public/images/decorations/teddy.png" alt="" />
+      <Blocks src="/beibei-childcare/public/images/decorations/blocks.png" alt="" />
+      <Crayon src="/beibei-childcare/public/images/decorations/crayon.png" alt="" />
       
       <Section id="home">
         <Home />
