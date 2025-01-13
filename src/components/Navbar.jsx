@@ -124,7 +124,7 @@ function Navbar() {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
-      setIsOpen(false); // 点击导航后自动收起菜单
+      setIsOpen(false);
     }
   };
 
@@ -140,8 +140,8 @@ function Navbar() {
       <NavLinks>
         <NavLink onClick={() => scrollToSection('home')}>首页</NavLink>
         <NavLink onClick={() => scrollToSection('philosophy')}>办学理念</NavLink>
-        <NavLink onClick={() => scrollToSection('strength')}>优势</NavLink>
-        <NavLink onClick={() => scrollToSection('environment')}>环境</NavLink>
+        <NavLink onClick={() => scrollToSection('strength')}>我们的优势</NavLink>
+        <NavLink onClick={() => scrollToSection('environment')}>教育环境</NavLink>
         <NavLink onClick={() => scrollToSection('license')}>执照和资质</NavLink>
         <NavLink onClick={() => scrollToSection('contact')}>联系我们</NavLink>
       </NavLinks>

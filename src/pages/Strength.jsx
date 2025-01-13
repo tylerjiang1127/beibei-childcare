@@ -1,21 +1,42 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import {
+  PageContainer,
+  ContentCard,
+  Title,
+  Subtitle,
+  Text,
+  List,
+  ListItem
+} from '../styles/SharedStyles';
 
-const Container = styled.div`
-  padding: 120px 20px 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-`
 function Strength() {
   return (
-    <Container>
-      <h1>优势</h1>
-      <p>1. 家庭幼儿园，提供更多的关爱、更精细护理、更自然的社交和成长环境</p>
-      <p>2. 沉浸式标准中文普通话，为孩子打下扎实的汉语基础</p>
-      <p>3. 全方面培养孩子社交礼仪，广泛启蒙幼儿兴趣爱好</p>
-      <p>4. 教师具有联邦CDA资质和经验，确保幼儿得到专业水准的护理和教育</p>
-    </Container>
-  )
+    <PageContainer>
+      <Title>我们的优势</Title>
+      <ContentCard>
+        <Subtitle>专业的教育团队</Subtitle>
+        <List>
+          <ListItem>持有麻省EEC颁发的婴幼儿教育执照</ListItem>
+          <ListItem>多年幼儿教育经验</ListItem>
+          <ListItem>定期参加专业培训和进修</ListItem>
+        </List>
+
+        <Subtitle>优质的教育环境</Subtitle>
+        <List>
+          <ListItem>宽敞明亮的活动空间</ListItem>
+          <ListItem>丰富的教具和玩具</ListItem>
+          <ListItem>安全的户外活动区域</ListItem>
+        </List>
+
+        <Subtitle>特色课程设置</Subtitle>
+        <List>
+          <ListItem>中英双语教学环境</ListItem>
+          <ListItem>音乐、美术、体能多元化活动</ListItem>
+          <ListItem>个性化的成长计划</ListItem>
+        </List>
+      </ContentCard>
+    </PageContainer>
+  );
 }
 
-export default Strength
+export default Strength;

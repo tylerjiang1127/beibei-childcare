@@ -1,100 +1,116 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Container = styled.div`
-  padding: 120px 20px 20px;
-  max-width: 1200px;
+const ContactContainer = styled.div`
+  max-width: 800px;
   margin: 0 auto;
-`
+  padding: 2rem;
 
-const Title = styled.h1`
-  margin-bottom: 3rem;
-  text-align: center;
-  color: ${props => props.theme.colors.primary};
-`
-
-const ContactCard = styled.div`
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 2rem 3rem;
-  background: white;
-  border-radius: 15px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-  border: 1px solid ${props => props.theme.colors.secondary};
-  position: relative;
-  
-  &:before {
-    content: '';
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    right: -5px;
-    bottom: -5px;
-    border: 2px solid ${props => props.theme.colors.primary};
-    border-radius: 18px;
-    opacity: 0.3;
-    pointer-events: none;
+  @media (max-width: 767px) {
+    padding: 1rem;
   }
-`
+`;
 
 const ContactInfo = styled.div`
+  background-color: ${props => props.theme.colors.secondary};
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 767px) {
+    padding: 1.5rem;
+  }
+`;
+
+const Title = styled.h2`
+  color: ${props => props.theme.colors.primary};
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+
+  @media (max-width: 767px) {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+`;
+
+const InfoItem = styled.div`
+  margin-bottom: 1.5rem;
   font-size: 1.1rem;
   line-height: 1.6;
-`
 
-const ContactItem = styled.div`
-  margin-bottom: 1.2rem;
-  padding-bottom: 1.2rem;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  
-  &:not(:last-child) {
-    border-bottom: 1px dashed ${props => props.theme.colors.secondary};
+  @media (max-width: 767px) {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
   }
-`
+`;
 
 const Label = styled.span`
   font-weight: bold;
-  min-width: 80px;
   color: ${props => props.theme.colors.primary};
-`
+  margin-right: 0.5rem;
 
-const Link = styled.a`
-  color: ${props => props.theme.colors.text};
-  text-decoration: none;
-  transition: color 0.3s ease;
-  
-  &:hover {
-    color: ${props => props.theme.colors.primary};
+  @media (max-width: 767px) {
+    display: block;
+    margin-bottom: 0.3rem;
   }
-`
+`;
+
+const Text = styled.span`
+  word-break: break-word;  // 确保长文本会换行
+`;
+
+const MapContainer = styled.div`
+  margin-top: 2rem;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+  @media (max-width: 767px) {
+    margin-top: 1.5rem;
+  }
+
+  iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+
+    @media (max-width: 767px) {
+      height: 300px;
+    }
+  }
+`;
 
 function Contact() {
   return (
-    <Container>
+    <ContactContainer>
       <Title>联系我们</Title>
-      <ContactCard>
-        <ContactInfo>
-          <ContactItem>
-            <Label>地址：</Label>
-            <span>82 Oak Road, Canton MA 02021</span>
-          </ContactItem>
-          <ContactItem>
-            <Label>电话：</Label>
-            <Link href="tel:617-763-3185">617-763-3185</Link>
-          </ContactItem>
-          <ContactItem>
-            <Label>微信：</Label>
-            <span>wjjwang38</span>
-          </ContactItem>
-          <ContactItem>
-            <Label>邮箱：</Label>
-            <Link href="mailto:janewangbj@gmail.com">janewangbj@gmail.com</Link>
-          </ContactItem>
-        </ContactInfo>
-      </ContactCard>
-    </Container>
+      <ContactInfo>
+        <InfoItem>
+          <Label>地址：</Label>
+          <Text>82 Oak Road, Canton MA 02021</Text>
+        </InfoItem>
+        <InfoItem>
+          <Label>电话：</Label>
+          <Text><a href="tel:617-763-3185">617-763-3185</a></Text>
+        </InfoItem>
+        <InfoItem>
+          <Label>微信：</Label>
+          <Text>wjjwang38</Text>
+        </InfoItem>
+        <InfoItem>
+          <Label>邮箱：</Label>
+          <Text><a href="mailto:janewangbj@gmail.com">janewangbj@gmail.com</a></Text>
+        </InfoItem>
+      </ContactInfo>
+      <MapContainer>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3084.111711111111!2d-71.1575316845138!3d42.3499277791881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e370a92b555555%3A0x1234567890abcdef!2s82%20Oak%20Road%2C%20Canton%2C%20MA%2002021!5e0!3m2!1sen!2sus!4v1638400000000!5m2!1sen!2sus"
+          allowFullScreen
+          loading="lazy"
+        ></iframe>
+      </MapContainer>
+    </ContactContainer>
   )
 }
 

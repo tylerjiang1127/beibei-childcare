@@ -194,6 +194,88 @@ const Crayon = styled(Decoration)`
   ${floatAnimation(-12)}
 `;
 
+// 为不同页面创建独特的装饰布局
+const PhilosophyDecorations = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+
+  ${Star1} {
+    top: 15%;
+    right: 5%;
+  }
+  ${Rainbow} {
+    bottom: 20%;
+    left: 5%;
+    opacity: 0.2;
+  }
+  ${Butterfly} {
+    top: 30%;
+    left: 8%;
+  }
+`;
+
+const StrengthDecorations = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+
+  ${Star1} {
+    top: 10%;
+    left: 5%;
+  }
+  ${Star2} {
+    bottom: 25%;
+    right: 8%;
+  }
+  ${Balloon} {
+    top: 40%;
+    right: 5%;
+  }
+`;
+
+const EnvironmentDecorations = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+
+  ${TopCloud1} {
+    top: 5%;
+    right: 10%;
+  }
+  ${TopCloud2} {
+    bottom: 30%;
+    left: 5%;
+  }
+  ${Bird} {
+    top: 20%;
+    left: 8%;
+  }
+`;
+
+const LicenseDecorations = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+
+  ${TeddyBear} {
+    bottom: 15%;
+    right: 5%;
+  }
+  ${Blocks} {
+    top: 25%;
+    left: 5%;
+  }
+  ${Crayon} {
+    bottom: 35%;
+    right: 10%;
+  }
+`;
+
 function MainContent() {
   return (
     <ContentContainer>
@@ -223,15 +305,35 @@ function MainContent() {
         <Home />
       </Section>
       <Section id="philosophy">
+        <PhilosophyDecorations>
+          <Star1 src={getImagePath('/public/images/decorations/star.png')} alt="" />
+          <Rainbow src={getImagePath('/public/images/decorations/rainbow.png')} alt="" />
+          <Butterfly src={getImagePath('/public/images/decorations/butterfly.png')} alt="" />
+        </PhilosophyDecorations>
         <Philosophy />
       </Section>
       <Section id="strength">
+        <StrengthDecorations>
+          <Star1 src={getImagePath('/public/images/decorations/star.png')} alt="" />
+          <Star2 src={getImagePath('/public/images/decorations/star.png')} alt="" />
+          <Balloon src={getImagePath('/public/images/decorations/balloon.png')} alt="" />
+        </StrengthDecorations>
         <Strength />
       </Section>
       <Section id="environment">
+        <EnvironmentDecorations>
+          <TopCloud1 src={getImagePath('/public/images/decorations/cloud.png')} alt="" />
+          <TopCloud2 src={getImagePath('/public/images/decorations/cloud.png')} alt="" />
+          <Bird src={getImagePath('/public/images/decorations/bird.png')} alt="" />
+        </EnvironmentDecorations>
         <Environment />
       </Section>
       <Section id="license">
+        <LicenseDecorations>
+          <TeddyBear src={getImagePath('/public/images/decorations/teddy.png')} alt="" />
+          <Blocks src={getImagePath('/public/images/decorations/blocks.png')} alt="" />
+          <Crayon src={getImagePath('/public/images/decorations/crayon.png')} alt="" />
+        </LicenseDecorations>
         <License />
       </Section>
       <Section id="contact">

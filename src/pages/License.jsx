@@ -1,49 +1,34 @@
-import React from 'react'
-import styled from 'styled-components'
-
-const Container = styled.div`
-  padding: 120px 20px 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-`
-const Title = styled.h1`
-  margin-bottom: 2rem;
-  text-align: center;
-`
-
-const Content = styled.div`
-  font-size: 1.1rem;
-  line-height: 1.8;
-  margin-bottom: 2rem;
-`
-
-const QualificationItem = styled.div`
-  margin-bottom: 1.5rem;
-`
+import React from 'react';
+import {
+  PageContainer,
+  ContentCard,
+  Title,
+  Text,
+  List,
+  ListItem
+} from '../styles/SharedStyles';
 
 function License() {
   return (
-    <Container>
+    <PageContainer>
       <Title>执照和资质</Title>
-      <Content>
-        <QualificationItem>
-          <h3>营业执照</h3>
-          <p>Beibei Child Care于2025年1月获得麻省托儿所营业执照</p>
-        </QualificationItem>
-        <QualificationItem>
-          <h3>教师资质</h3>
-          <p>Jane老师持有联邦CDA（Child Development Associate）证书</p>
-          <p>拥有6年以上的儿童护理和教育经验</p>
-        </QualificationItem>
-        <QualificationItem>
-          <h3>托管资质</h3>
-          <p>可接收5-36个月的婴幼儿</p>
-          <p>持有儿童急救证书</p>
-          <p>通过麻省CORI背景审查</p>
-        </QualificationItem>
-      </Content>
-    </Container>
-  )
+      <ContentCard>
+        <Text>
+          Beibei Child Care 持有麻省政府颁发的所有必要执照和许可，确保为您的孩子提供专业、合规的照护服务。
+        </Text>
+        <List>
+          <ListItem>麻省 EEC (Department of Early Education and Care) 执照</ListItem>
+          <ListItem>婴幼儿急救和 CPR 认证</ListItem>
+          <ListItem>食品安全认证</ListItem>
+          <ListItem>儿童安全培训证书</ListItem>
+          <ListItem>专业责任保险</ListItem>
+        </List>
+        <Text>
+          我们严格遵守麻省 EEC 的各项规定和标准，定期接受检查和评估，确保为每一位孩子提供安全、专业的照护环境。
+        </Text>
+      </ContentCard>
+    </PageContainer>
+  );
 }
 
-export default License 
+export default License; 
