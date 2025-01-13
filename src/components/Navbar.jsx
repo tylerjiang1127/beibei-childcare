@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { getImagePath } from '../utils/imagePath';
 
 const Nav = styled.nav`
   background-color: ${props => props.theme.colors.secondary};
@@ -91,7 +92,7 @@ function Navbar() {
   return (
     <Nav>
       <LogoContainer>
-        <LogoImage src="/beibei-childcare/public/images/Beibei-Logo.png" alt="Beibei Logo" />
+        <LogoImage src={getImagePath('/public/images/Beibei-Logo.png')} alt="Beibei Logo" />
         <Logo>Beibei Child Care</Logo>
       </LogoContainer>
       <NavLinks>

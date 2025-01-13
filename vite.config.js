@@ -4,6 +4,6 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/beibei-childcare/',
+  base: process.env.NODE_ENV === 'production' ? '/beibei-childcare/' : './',
   assetsInclude: ['**/*.jpg', '**/*.JPG', '**/*.png']
 })

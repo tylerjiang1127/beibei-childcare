@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { getImagePath } from '../utils/imagePath';
 
 const HomeContainer = styled.div`
   padding: 120px 20px 20px;
@@ -68,12 +69,12 @@ function Home() {
   };
 
   const images = [
-    { src: "/beibei-childcare/public/images/home-image-1.jpg" },
-    { src: "/beibei-childcare/public/images/home-image-2.jpg" },
-    { src: "/beibei-childcare/public/images/home-image-3.jpg" },
-    { src: "/beibei-childcare/public/images/home-image-4.jpg" },
-    { src: "/beibei-childcare/public/images/home-image-5.jpg" },
-    { src: "/beibei-childcare/public/images/home-image-6.jpg" }
+    { src: getImagePath('/public/images/home-image-1.jpg') },
+    { src: getImagePath('/public/images/home-image-2.jpg') },
+    { src: getImagePath('/public/images/home-image-3.jpg') },
+    { src: getImagePath('/public/images/home-image-4.jpg') },
+    { src: getImagePath('/public/images/home-image-5.jpg') },
+    { src: getImagePath('/public/images/home-image-6.jpg') }
   ];
 
   return (
